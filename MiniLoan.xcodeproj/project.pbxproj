@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		395A30FD18D2512D00406250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A30FC18D2512D00406250 /* Foundation.framework */; };
+		395A30FF18D2512D00406250 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A30FE18D2512D00406250 /* CoreGraphics.framework */; };
+		395A310118D2512D00406250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A310018D2512D00406250 /* UIKit.framework */; };
+		395A310718D2512D00406250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 395A310518D2512D00406250 /* InfoPlist.strings */; };
+		395A310918D2512D00406250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A310818D2512D00406250 /* main.m */; };
+		395A310D18D2512D00406250 /* YANGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A310C18D2512D00406250 /* YANGAppDelegate.m */; };
+		395A310F18D2512D00406250 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395A310E18D2512D00406250 /* Images.xcassets */; };
+		395A311618D2512D00406250 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A311518D2512D00406250 /* XCTest.framework */; };
+		395A311718D2512D00406250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A30FC18D2512D00406250 /* Foundation.framework */; };
+		395A311818D2512D00406250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A310018D2512D00406250 /* UIKit.framework */; };
+		395A312018D2512D00406250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 395A311E18D2512D00406250 /* InfoPlist.strings */; };
+		395A312218D2512D00406250 /* MiniLoanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A312118D2512D00406250 /* MiniLoanTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		395A311918D2512D00406250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395A30F118D2512D00406250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395A30F818D2512D00406250;
+			remoteInfo = MiniLoan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		395A30F918D2512D00406250 /* MiniLoan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniLoan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		395A30FC18D2512D00406250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		395A30FE18D2512D00406250 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		395A310018D2512D00406250 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		395A310418D2512D00406250 /* MiniLoan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniLoan-Info.plist"; sourceTree = "<group>"; };
+		395A310618D2512D00406250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		395A310818D2512D00406250 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		395A310A18D2512D00406250 /* MiniLoan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniLoan-Prefix.pch"; sourceTree = "<group>"; };
+		395A310B18D2512D00406250 /* YANGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YANGAppDelegate.h; sourceTree = "<group>"; };
+		395A310C18D2512D00406250 /* YANGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YANGAppDelegate.m; sourceTree = "<group>"; };
+		395A310E18D2512D00406250 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		395A311418D2512D00406250 /* MiniLoanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniLoanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		395A311518D2512D00406250 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		395A311D18D2512D00406250 /* MiniLoanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniLoanTests-Info.plist"; sourceTree = "<group>"; };
+		395A311F18D2512D00406250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		395A312118D2512D00406250 /* MiniLoanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniLoanTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		395A30F618D2512D00406250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395A30FF18D2512D00406250 /* CoreGraphics.framework in Frameworks */,
+				395A310118D2512D00406250 /* UIKit.framework in Frameworks */,
+				395A30FD18D2512D00406250 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395A311118D2512D00406250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395A311618D2512D00406250 /* XCTest.framework in Frameworks */,
+				395A311818D2512D00406250 /* UIKit.framework in Frameworks */,
+				395A311718D2512D00406250 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		395A30F018D2512D00406250 = {
+			isa = PBXGroup;
+			children = (
+				395A310218D2512D00406250 /* MiniLoan */,
+				395A311B18D2512D00406250 /* MiniLoanTests */,
+				395A30FB18D2512D00406250 /* Frameworks */,
+				395A30FA18D2512D00406250 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		395A30FA18D2512D00406250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				395A30F918D2512D00406250 /* MiniLoan.app */,
+				395A311418D2512D00406250 /* MiniLoanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		395A30FB18D2512D00406250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				395A30FC18D2512D00406250 /* Foundation.framework */,
+				395A30FE18D2512D00406250 /* CoreGraphics.framework */,
+				395A310018D2512D00406250 /* UIKit.framework */,
+				395A311518D2512D00406250 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		395A310218D2512D00406250 /* MiniLoan */ = {
+			isa = PBXGroup;
+			children = (
+				395A310B18D2512D00406250 /* YANGAppDelegate.h */,
+				395A310C18D2512D00406250 /* YANGAppDelegate.m */,
+				395A310E18D2512D00406250 /* Images.xcassets */,
+				395A310318D2512D00406250 /* Supporting Files */,
+			);
+			path = MiniLoan;
+			sourceTree = "<group>";
+		};
+		395A310318D2512D00406250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395A310418D2512D00406250 /* MiniLoan-Info.plist */,
+				395A310518D2512D00406250 /* InfoPlist.strings */,
+				395A310818D2512D00406250 /* main.m */,
+				395A310A18D2512D00406250 /* MiniLoan-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		395A311B18D2512D00406250 /* MiniLoanTests */ = {
+			isa = PBXGroup;
+			children = (
+				395A312118D2512D00406250 /* MiniLoanTests.m */,
+				395A311C18D2512D00406250 /* Supporting Files */,
+			);
+			path = MiniLoanTests;
+			sourceTree = "<group>";
+		};
+		395A311C18D2512D00406250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395A311D18D2512D00406250 /* MiniLoanTests-Info.plist */,
+				395A311E18D2512D00406250 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		395A30F818D2512D00406250 /* MiniLoan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395A312518D2512D00406250 /* Build configuration list for PBXNativeTarget "MiniLoan" */;
+			buildPhases = (
+				395A30F518D2512D00406250 /* Sources */,
+				395A30F618D2512D00406250 /* Frameworks */,
+				395A30F718D2512D00406250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniLoan;
+			productName = MiniLoan;
+			productReference = 395A30F918D2512D00406250 /* MiniLoan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		395A311318D2512D00406250 /* MiniLoanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395A312818D2512D00406250 /* Build configuration list for PBXNativeTarget "MiniLoanTests" */;
+			buildPhases = (
+				395A311018D2512D00406250 /* Sources */,
+				395A311118D2512D00406250 /* Frameworks */,
+				395A311218D2512D00406250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395A311A18D2512D00406250 /* PBXTargetDependency */,
+			);
+			name = MiniLoanTests;
+			productName = MiniLoanTests;
+			productReference = 395A311418D2512D00406250 /* MiniLoanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		395A30F118D2512D00406250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YANG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yang Ltd";
+				TargetAttributes = {
+					395A311318D2512D00406250 = {
+						TestTargetID = 395A30F818D2512D00406250;
+					};
+				};
+			};
+			buildConfigurationList = 395A30F418D2512D00406250 /* Build configuration list for PBXProject "MiniLoan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 395A30F018D2512D00406250;
+			productRefGroup = 395A30FA18D2512D00406250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				395A30F818D2512D00406250 /* MiniLoan */,
+				395A311318D2512D00406250 /* MiniLoanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		395A30F718D2512D00406250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395A310718D2512D00406250 /* InfoPlist.strings in Resources */,
+				395A310F18D2512D00406250 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395A311218D2512D00406250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395A312018D2512D00406250 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		395A30F518D2512D00406250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395A310918D2512D00406250 /* main.m in Sources */,
+				395A310D18D2512D00406250 /* YANGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395A311018D2512D00406250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395A312218D2512D00406250 /* MiniLoanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		395A311A18D2512D00406250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395A30F818D2512D00406250 /* MiniLoan */;
+			targetProxy = 395A311918D2512D00406250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		395A310518D2512D00406250 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395A310618D2512D00406250 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		395A311E18D2512D00406250 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395A311F18D2512D00406250 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		395A312318D2512D00406250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		395A312418D2512D00406250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		395A312618D2512D00406250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniLoan/MiniLoan-Prefix.pch";
+				INFOPLIST_FILE = "MiniLoan/MiniLoan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		395A312718D2512D00406250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniLoan/MiniLoan-Prefix.pch";
+				INFOPLIST_FILE = "MiniLoan/MiniLoan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		395A312918D2512D00406250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MiniLoan.app/MiniLoan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniLoan/MiniLoan-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MiniLoanTests/MiniLoanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		395A312A18D2512D00406250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MiniLoan.app/MiniLoan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniLoan/MiniLoan-Prefix.pch";
+				INFOPLIST_FILE = "MiniLoanTests/MiniLoanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		395A30F418D2512D00406250 /* Build configuration list for PBXProject "MiniLoan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395A312318D2512D00406250 /* Debug */,
+				395A312418D2512D00406250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395A312518D2512D00406250 /* Build configuration list for PBXNativeTarget "MiniLoan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395A312618D2512D00406250 /* Debug */,
+				395A312718D2512D00406250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		395A312818D2512D00406250 /* Build configuration list for PBXNativeTarget "MiniLoanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395A312918D2512D00406250 /* Debug */,
+				395A312A18D2512D00406250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 395A30F118D2512D00406250 /* Project object */;
+}
