@@ -19,6 +19,8 @@
 		395A311818D2512D00406250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A310018D2512D00406250 /* UIKit.framework */; };
 		395A312018D2512D00406250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 395A311E18D2512D00406250 /* InfoPlist.strings */; };
 		395A312218D2512D00406250 /* MiniLoanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A312118D2512D00406250 /* MiniLoanTests.m */; };
+		395A312D18D3379E00406250 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 395A312C18D3379E00406250 /* Photo.m */; };
+		395A313818D9650900406250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395A313A18D9650900406250 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		395A311D18D2512D00406250 /* MiniLoanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniLoanTests-Info.plist"; sourceTree = "<group>"; };
 		395A311F18D2512D00406250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		395A312118D2512D00406250 /* MiniLoanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniLoanTests.m; sourceTree = "<group>"; };
+		395A312B18D3379E00406250 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		395A312C18D3379E00406250 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		395A313918D9650900406250 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 		395A310218D2512D00406250 /* MiniLoan */ = {
 			isa = PBXGroup;
 			children = (
+				395A313A18D9650900406250 /* Main.storyboard */,
+				395A312B18D3379E00406250 /* Photo.h */,
+				395A312C18D3379E00406250 /* Photo.m */,
 				395A310B18D2512D00406250 /* YANGAppDelegate.h */,
 				395A310C18D2512D00406250 /* YANGAppDelegate.m */,
 				395A310E18D2512D00406250 /* Images.xcassets */,
@@ -220,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395A313818D9650900406250 /* Main.storyboard in Resources */,
 				395A310718D2512D00406250 /* InfoPlist.strings in Resources */,
 				395A310F18D2512D00406250 /* Images.xcassets in Resources */,
 			);
@@ -240,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395A312D18D3379E00406250 /* Photo.m in Sources */,
 				395A310918D2512D00406250 /* main.m in Sources */,
 				395A310D18D2512D00406250 /* YANGAppDelegate.m in Sources */,
 			);
@@ -278,6 +288,14 @@
 				395A311F18D2512D00406250 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		395A313A18D9650900406250 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395A313918D9650900406250 /* en */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

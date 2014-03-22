@@ -13,6 +13,10 @@
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
+        // my code
+        //NSNumber* value = [[NSNumber alloc] initWithFloat:1.0];
+        //
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([YANGAppDelegate class]));
     }
 }
