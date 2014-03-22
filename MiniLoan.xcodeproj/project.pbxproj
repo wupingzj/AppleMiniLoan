@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3958DBB118DD8EC200AB5ADD /* Offer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3958DBB018DD8EC200AB5ADD /* Offer.m */; };
 		395A30FD18D2512D00406250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A30FC18D2512D00406250 /* Foundation.framework */; };
 		395A30FF18D2512D00406250 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A30FE18D2512D00406250 /* CoreGraphics.framework */; };
 		395A310118D2512D00406250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395A310018D2512D00406250 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3958DBAF18DD8EC200AB5ADD /* Offer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offer.h; sourceTree = "<group>"; };
+		3958DBB018DD8EC200AB5ADD /* Offer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offer.m; sourceTree = "<group>"; };
 		395A30F918D2512D00406250 /* MiniLoan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniLoan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		395A30FC18D2512D00406250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		395A30FE18D2512D00406250 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				395A313A18D9650900406250 /* Main.storyboard */,
+				3958DBAF18DD8EC200AB5ADD /* Offer.h */,
+				3958DBB018DD8EC200AB5ADD /* Offer.m */,
 				395A312B18D3379E00406250 /* Photo.h */,
 				395A312C18D3379E00406250 /* Photo.m */,
 				395A310B18D2512D00406250 /* YANGAppDelegate.h */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3958DBB118DD8EC200AB5ADD /* Offer.m in Sources */,
 				395A312D18D3379E00406250 /* Photo.m in Sources */,
 				395A310918D2512D00406250 /* main.m in Sources */,
 				395A310D18D2512D00406250 /* YANGAppDelegate.m in Sources */,
