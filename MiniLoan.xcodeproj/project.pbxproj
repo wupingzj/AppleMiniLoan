@@ -458,6 +458,7 @@
 				395A312718D2512D00406250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		395A312818D2512D00406250 /* Build configuration list for PBXNativeTarget "MiniLoanTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +467,7 @@
 				395A312A18D2512D00406250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
