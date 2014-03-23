@@ -61,11 +61,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pqs-l8-G1F"/>
+                    <navigationItem key="navigationItem" id="pqs-l8-G1F">
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="gCC-Mp-SDC">
+                            <connections>
+                                <segue destination="uz1-RT-kOG" kind="push" id="EWF-mn-1IS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2p-Ru-K6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="502" y="-667"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WYc-dv-CyI">
+            <objects>
+                <viewController id="uz1-RT-kOG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xTU-yK-tw6"/>
+                        <viewControllerLayoutGuide type="bottom" id="uY2-3J-GBu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hCB-dA-lWf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile TO DO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijq-1g-glU">
+                                <rect key="frame" x="109" y="253" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oJG-la-o9o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUo-Ha-jjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="-5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ybq-AN-dzE">
