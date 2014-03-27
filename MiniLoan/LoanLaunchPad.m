@@ -46,6 +46,7 @@
 }
 */
 
+// hide keyboard when touching areas outside editting fields
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
