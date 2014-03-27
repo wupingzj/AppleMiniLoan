@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoanLaunchPad : UIViewController
+@interface LoanLaunchPad : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+{
+    UIPickerView *pickerView;
+    NSMutableArray *pickerArray;
+}
+
+@property (weak, nonatomic) IBOutlet UIPickerView *myPicker;
+
 
 @end

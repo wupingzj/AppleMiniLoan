@@ -13,6 +13,52 @@
 @end
 
 @implementation LoanLaunchPad
+@synthesize myPicker;
+
+- (NSInteger)numberOfComponentsInPickerView: (UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger) component
+{
+    return [pickerArray count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [pickerArray objectAtIndex:row];
+}
+
+- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    if ([[pickerArray objectAtIndex:row] isEqual:@"15 days"]) {
+        NSLog(@"15 days selected!");
+        
+    }
+    
+    if ([[pickerArray objectAtIndex:row] isEqual:@"30 days"]) {
+        NSLog(@"30 days selected!");
+        
+    }
+    
+    if ([[pickerArray objectAtIndex:row] isEqual:@"one month"]) {
+        NSLog(@"One month selected!");
+        
+    }
+    
+    if ([[pickerArray objectAtIndex:row] isEqual:@"two monthes"]) {
+        NSLog(@"Two monthes selected!");
+    }
+}
+
+////////
+
+//- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component NS_AVAILABLE_IOS(6_0); // attributed title is favored if both methods are implemented
+//- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view;
+//
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+//////////
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +73,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    pickerArray = [[NSMutableArray alloc] init];
+    
+    [pickerArray addObject:@"15 days"];
+    [pickerArray addObject:@"30 days"];
+    [pickerArray addObject:@"one month"];
+    [pickerArray addObject:@"two month"];
+    [pickerArray addObject:@"one year"];
 }
 
 - (void)didReceiveMemoryWarning
