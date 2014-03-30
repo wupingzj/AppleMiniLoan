@@ -79,8 +79,16 @@
     [pickerArray addObject:@"15 days"];
     [pickerArray addObject:@"30 days"];
     [pickerArray addObject:@"one month"];
-    [pickerArray addObject:@"two month"];
+    [pickerArray addObject:@"two monthes"];
+        [pickerArray addObject:@"three monthes"];
+        [pickerArray addObject:@"four monthes"];
+        [pickerArray addObject:@"five monthes"];
+        [pickerArray addObject:@"six monthes"];
+        [pickerArray addObject:@"seven monthes"];
+        [pickerArray addObject:@"eight monthes"];
     [pickerArray addObject:@"one year"];
+    [pickerArray addObject:@"two years"];
+    
 }
 
 - (void)didReceiveMemoryWarning
