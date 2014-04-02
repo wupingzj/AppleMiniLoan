@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoanLaunchPad : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface LoanLaunchPad : UIViewController
 {
-    UIPickerView *pickerView;
-    NSMutableArray *pickerArray;
+//    UIPickerView *pickerView;
+//    NSMutableArray *pickerArray;
+    
+    NSNumber *loanTerm; // days
 }
 
 @property (weak, nonatomic) IBOutlet UIPickerView *myPicker;

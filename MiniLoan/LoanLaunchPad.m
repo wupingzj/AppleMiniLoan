@@ -13,44 +13,43 @@
 @end
 
 @implementation LoanLaunchPad
-@synthesize myPicker;
 
-- (NSInteger)numberOfComponentsInPickerView: (UIPickerView *)pickerView
-{
-    return 1;
-}
+//- (NSInteger)numberOfComponentsInPickerView: (UIPickerView *)pickerView
+//{
+//    return 1;
+//}
+//
+//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger) component
+//{
+//    return [pickerArray count];
+//}
+//
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+//{
+//    return [pickerArray objectAtIndex:row];
+//}
 
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger) component
-{
-    return [pickerArray count];
-}
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    return [pickerArray objectAtIndex:row];
-}
-
-- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-{
-    if ([[pickerArray objectAtIndex:row] isEqual:@"15 days"]) {
-        NSLog(@"15 days selected!");
-        
-    }
-    
-    if ([[pickerArray objectAtIndex:row] isEqual:@"30 days"]) {
-        NSLog(@"30 days selected!");
-        
-    }
-    
-    if ([[pickerArray objectAtIndex:row] isEqual:@"one month"]) {
-        NSLog(@"One month selected!");
-        
-    }
-    
-    if ([[pickerArray objectAtIndex:row] isEqual:@"two monthes"]) {
-        NSLog(@"Two monthes selected!");
-    }
-}
+//- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+//{
+//    if ([[pickerArray objectAtIndex:row] isEqual:@"15 days"]) {
+//        NSLog(@"15 days selected!");
+//        
+//    }
+//    
+//    if ([[pickerArray objectAtIndex:row] isEqual:@"30 days"]) {
+//        NSLog(@"30 days selected!");
+//        
+//    }
+//    
+//    if ([[pickerArray objectAtIndex:row] isEqual:@"one month"]) {
+//        NSLog(@"One month selected!");
+//        
+//    }
+//    
+//    if ([[pickerArray objectAtIndex:row] isEqual:@"two monthes"]) {
+//        NSLog(@"Two monthes selected!");
+//    }
+//}
 
 ////////
 
@@ -73,22 +72,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    pickerArray = [[NSMutableArray alloc] init];
-    
-    [pickerArray addObject:@"15 days"];
-    [pickerArray addObject:@"30 days"];
-    [pickerArray addObject:@"one month"];
-    [pickerArray addObject:@"two monthes"];
-        [pickerArray addObject:@"three monthes"];
-        [pickerArray addObject:@"four monthes"];
-        [pickerArray addObject:@"five monthes"];
-        [pickerArray addObject:@"six monthes"];
-        [pickerArray addObject:@"seven monthes"];
-        [pickerArray addObject:@"eight monthes"];
-    [pickerArray addObject:@"one year"];
-    [pickerArray addObject:@"two years"];
-    
+    loanTerm = [NSNumber numberWithInt:15];
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,6 +92,7 @@
 }
 */
 
+#pragma mark - Hide Keyboard
 // hide keyboard when touching areas outside editting fields
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
