@@ -8,7 +8,7 @@
 
 #import "YGLoanTermViewController.h"
 
-@interface YGLoanTermViewController ()
+@interface YGLoanTermViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
