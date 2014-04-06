@@ -57,19 +57,23 @@
 }
 
 #pragma mark - Table view data source
+#pragma mark * Table view callbacks
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
+    assert(tableView != nil);
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    #pragma unused(tableView)
+    #pragma unused(section)
+    
     // Return the number of rows in the section.
     return [tableData count];
 }
 
-// PING define the cells
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *loanTermItemID = @"LoanTermItemID";
@@ -85,6 +89,33 @@
     cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"I selected somethign");
+    #pragma unused(tv)
+    NSUInteger section;
+    NSUInteger row;
+    UITableViewCell *cellToSet = nil;
+    UITableViewCell *cellToClear = nil;
+    
+    assert(tv == self.tableView);
+    assert(indexPath != nil);
+    
+    section = indexPath.section;
+    row = indexPath.row;
+    
+
+    
+    NSIndexPath *currentIdxPath = [NSIndexPath indexPathForRow:[self.loanTerm intValue] inSection:section];
+    cellToClear = [tv cellForRowAtIndexPath:currentIdxPath];
+    cellToClear.accessoryType = UITableViewCellAccessoryNone;
+    
+    cellToSet   = [tv cellForRowAtIndexPath:indexPath];
+    cellToSet.accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    self.loanTerm = [NSNumber numberWithInteger:row];
 }
 
 
