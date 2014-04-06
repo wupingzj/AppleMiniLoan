@@ -17,8 +17,6 @@
     NSArray *tableData;
 }
 
-//@synthesize loanTerm;
-
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
