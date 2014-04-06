@@ -44,8 +44,9 @@
     NSIndexPath *idxPath = [NSIndexPath indexPathForRow:[self.loanTerm intValue] inSection:0];
     
     [self.tableView selectRowAtIndexPath:idxPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-    [self.tableView cellForRowAtIndexPath:idxPath].accessoryType = UITableViewCellAccessoryCheckmark;
-
+    
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:idxPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
     NSLog(@"loan term view loaded. Term=%@ ", self.loanTerm);
 }
@@ -86,14 +87,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:loanTermItemID];
     }
     
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    //cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.textLabel.text = tableData[indexPath.row];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"I selected somethign");
+    
     #pragma unused(tv)
     NSUInteger section;
     NSUInteger row;
