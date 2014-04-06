@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YGLoanTermViewController.h"
 
-@interface LoanLaunchPad : UIViewController
+@interface LoanLaunchPad : UIViewController <LoanTermDelegate>
 {
 //    UIPickerView *pickerView;
 //    NSMutableArray *pickerArray;

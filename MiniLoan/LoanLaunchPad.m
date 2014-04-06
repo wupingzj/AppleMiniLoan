@@ -7,7 +7,6 @@
 //
 
 #import "LoanLaunchPad.h"
-#import "YGLoanTermViewController.h"
 
 @interface LoanLaunchPad ()
 
@@ -51,12 +50,22 @@
     // Assume you have a viewHomeSegue defined that has the name of the segue you want to perform
     NSString * segueIdentifier = [segue identifier];
     if([segueIdentifier isEqualToString:@"SegueToLoanTerm"]){
-        YGLoanTermViewController *termController = segue.destinationViewController;
+        YGLoanTermViewController *loanTermVC = segue.destinationViewController;
         NSLog(@"current loan term in launch pad %@", loanTerm);
-        termController.loanTerm = loanTerm;
+        loanTermVC.loanTerm = loanTerm;
         //termController.loanTerm = [NSNumber numberWithInt:27];
-        NSLog(@"passing term to LoanTermVC: %i", [termController.loanTerm intValue]);
+        NSLog(@"passing term to LoanTermVC: %i", [loanTermVC.loanTerm intValue]);
+        
+        loanTermVC.loanTermDelegate = self;
     }
+}
+
+#pragma - delegate to handle the event of choosing loan term
+- (void) loanTermVCDidFinish:(YGLoanTermViewController *) loanTermVC {
+    
+    loanTerm = loanTermVC.loanTerm;
+    NSLog(@"delegate to handle the event of loan term being selected %@", loanTerm);
+    
 }
 
 

@@ -118,6 +118,8 @@
     cellToSet.accessoryType = UITableViewCellAccessoryCheckmark;
     
     self.loanTerm = [NSNumber numberWithInteger:row];
+    
+    [self.loanTermDelegate loanTermVCDidFinish:self];
 }
 
 

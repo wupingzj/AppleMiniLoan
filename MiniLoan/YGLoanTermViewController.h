@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LoanTermDelegate;
+
 @interface YGLoanTermViewController : UITableViewController {
 }
 
 @property (nonatomic, strong) NSNumber *loanTerm;
+@property (nonatomic, assign) id<LoanTermDelegate> loanTermDelegate;
 
+@end
+
+@protocol LoanTermDelegate <NSObject>
+
+- (void) loanTermVCDidFinish:(YGLoanTermViewController *) loanTermVC;
 
 @end
