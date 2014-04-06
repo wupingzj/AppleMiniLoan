@@ -17,7 +17,7 @@
     NSArray *tableData;
 }
 
-
+//@synthesize loanTerm;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,6 +39,15 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     tableData = [NSArray arrayWithObjects:@"15 days", @"30 days", @"60 days", @"90 days", @"180 days", @"360 days", nil];
+    
+    
+    NSIndexPath *idxPath = [NSIndexPath indexPathForRow:[self.loanTerm intValue] inSection:0];
+    
+    [self.tableView selectRowAtIndexPath:idxPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    [self.tableView cellForRowAtIndexPath:idxPath].accessoryType = UITableViewCellAccessoryCheckmark;
+
+    
+    NSLog(@"loan term view loaded. Term=%@ ", self.loanTerm);
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,17 +57,14 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [tableData count];
 }
@@ -120,7 +126,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -129,6 +134,5 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
 
 @end

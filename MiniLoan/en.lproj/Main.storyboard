@@ -70,7 +70,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eH4-0t-S6Q" kind="push" identifier="SegueToTerm" id="Vdu-lI-hXL"/>
+                                    <segue destination="eH4-0t-S6Q" kind="push" identifier="SegueToLoanTerm" id="Vdu-lI-hXL"/>
                                 </connections>
                             </button>
                         </subviews>

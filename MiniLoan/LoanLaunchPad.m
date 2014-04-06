@@ -7,57 +7,13 @@
 //
 
 #import "LoanLaunchPad.h"
+#import "YGLoanTermViewController.h"
 
 @interface LoanLaunchPad ()
 
 @end
 
 @implementation LoanLaunchPad
-
-//- (NSInteger)numberOfComponentsInPickerView: (UIPickerView *)pickerView
-//{
-//    return 1;
-//}
-//
-//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger) component
-//{
-//    return [pickerArray count];
-//}
-//
-//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-//{
-//    return [pickerArray objectAtIndex:row];
-//}
-
-//- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-//{
-//    if ([[pickerArray objectAtIndex:row] isEqual:@"15 days"]) {
-//        NSLog(@"15 days selected!");
-//        
-//    }
-//    
-//    if ([[pickerArray objectAtIndex:row] isEqual:@"30 days"]) {
-//        NSLog(@"30 days selected!");
-//        
-//    }
-//    
-//    if ([[pickerArray objectAtIndex:row] isEqual:@"one month"]) {
-//        NSLog(@"One month selected!");
-//        
-//    }
-//    
-//    if ([[pickerArray objectAtIndex:row] isEqual:@"two monthes"]) {
-//        NSLog(@"Two monthes selected!");
-//    }
-//}
-
-////////
-
-//- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component NS_AVAILABLE_IOS(6_0); // attributed title is favored if both methods are implemented
-//- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view;
-//
-//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
-//////////
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -72,7 +28,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    loanTerm = [NSNumber numberWithInt:15];
+    loanTerm = [NSNumber numberWithInt:0];
+    
+    NSLog(@"LOAN PAD view loaded");
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,7 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -89,8 +47,18 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+ 
+    // Assume you have a viewHomeSegue defined that has the name of the segue you want to perform
+    NSString * segueIdentifier = [segue identifier];
+    if([segueIdentifier isEqualToString:@"SegueToLoanTerm"]){
+        YGLoanTermViewController *termController = segue.destinationViewController;
+        NSLog(@"current loan term in launch pad %@", loanTerm);
+        termController.loanTerm = loanTerm;
+        //termController.loanTerm = [NSNumber numberWithInt:27];
+        NSLog(@"passing term to LoanTermVC: %i", [termController.loanTerm intValue]);
+    }
 }
-*/
+
 
 #pragma mark - Hide Keyboard
 // hide keyboard when touching areas outside editting fields

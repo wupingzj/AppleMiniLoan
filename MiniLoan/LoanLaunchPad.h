@@ -16,7 +16,4 @@
     NSNumber *loanTerm; // days
 }
 
-@property (weak, nonatomic) IBOutlet UIPickerView *myPicker;
-
-
 @end

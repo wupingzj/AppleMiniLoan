@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface YGLoanTermViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+{
+//    NSNumber *loanTerm; // days
+    
+}
+
+@property (nonatomic, strong) NSNumber *loanTerm;
 
 @end
