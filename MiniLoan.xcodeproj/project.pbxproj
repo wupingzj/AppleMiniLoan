@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391644EC18F41A4C00EFA52B /* YGLoanTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 391644EB18F41A4C00EFA52B /* YGLoanTerm.m */; };
 		3958DBB118DD8EC200AB5ADD /* Offer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3958DBB018DD8EC200AB5ADD /* Offer.m */; };
 		3958DBB418E02C4E00AB5ADD /* LoanLaunchPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 3958DBB318E02C4E00AB5ADD /* LoanLaunchPad.m */; };
 		3958DBB718E796B300AB5ADD /* YGLoanTermViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3958DBB618E796B300AB5ADD /* YGLoanTermViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		391644EA18F41A4C00EFA52B /* YGLoanTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGLoanTerm.h; sourceTree = "<group>"; };
+		391644EB18F41A4C00EFA52B /* YGLoanTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGLoanTerm.m; sourceTree = "<group>"; };
 		3958DBAF18DD8EC200AB5ADD /* Offer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offer.h; sourceTree = "<group>"; };
 		3958DBB018DD8EC200AB5ADD /* Offer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offer.m; sourceTree = "<group>"; };
 		3958DBB218E02C4E00AB5ADD /* LoanLaunchPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanLaunchPad.h; sourceTree = "<group>"; };
@@ -88,6 +91,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391644E818F3639A00EFA52B /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Validator;
+			sourceTree = "<group>";
+		};
+		391644E918F41A0C00EFA52B /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				3958DBAF18DD8EC200AB5ADD /* Offer.h */,
+				3958DBB018DD8EC200AB5ADD /* Offer.m */,
+				391644EA18F41A4C00EFA52B /* YGLoanTerm.h */,
+				391644EB18F41A4C00EFA52B /* YGLoanTerm.m */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
 		395A30F018D2512D00406250 = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +142,11 @@
 		395A310218D2512D00406250 /* MiniLoan */ = {
 			isa = PBXGroup;
 			children = (
+				391644E918F41A0C00EFA52B /* Business */,
+				391644E818F3639A00EFA52B /* Validator */,
 				395A313A18D9650900406250 /* Main.storyboard */,
 				3958DBB518E796B200AB5ADD /* YGLoanTermViewController.h */,
 				3958DBB618E796B300AB5ADD /* YGLoanTermViewController.m */,
-				3958DBAF18DD8EC200AB5ADD /* Offer.h */,
-				3958DBB018DD8EC200AB5ADD /* Offer.m */,
 				395A312B18D3379E00406250 /* Photo.h */,
 				395A312C18D3379E00406250 /* Photo.m */,
 				395A310B18D2512D00406250 /* YANGAppDelegate.h */,
@@ -269,6 +290,7 @@
 				3958DBB718E796B300AB5ADD /* YGLoanTermViewController.m in Sources */,
 				395A312D18D3379E00406250 /* Photo.m in Sources */,
 				395A310918D2512D00406250 /* main.m in Sources */,
+				391644EC18F41A4C00EFA52B /* YGLoanTerm.m in Sources */,
 				395A310D18D2512D00406250 /* YANGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

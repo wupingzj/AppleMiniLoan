@@ -7,6 +7,7 @@
 //
 
 #import "YGLoanTermViewController.h"
+#import "YGLoanTerm.h"
 
 @interface YGLoanTermViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -36,7 +37,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    tableData = [NSArray arrayWithObjects:@"15 days", @"30 days", @"60 days", @"90 days", @"180 days", @"360 days", nil];
+//    tableData = [NSArray arrayWithObjects:@"15 days", @"30 days", @"60 days", @"90 days", @"180 days", @"360 days", nil];
+    tableData = [[YGLoanTerm sharedInstance] loanTerms];
     
     
     NSIndexPath *idxPath = [NSIndexPath indexPathForRow:[self.loanTerm intValue] inSection:0];
