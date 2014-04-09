@@ -119,7 +119,7 @@
     
     self.loanTerm = [NSNumber numberWithInteger:row];
     
-    [self.loanTermDelegate loanTermVCDidFinish:self];
+    [self.loanTermDelegate loanTermSelected:self];
 }
 
 

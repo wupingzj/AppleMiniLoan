@@ -11,10 +11,7 @@
 
 @interface LoanLaunchPad : UIViewController <LoanTermDelegate>
 {
-//    UIPickerView *pickerView;
-//    NSMutableArray *pickerArray;
-    
-    NSNumber *loanTerm; // days
+    NSNumber *loanTerm; // index
 }
 
 @end

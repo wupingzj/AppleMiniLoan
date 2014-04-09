@@ -63,7 +63,7 @@
 }
 
 #pragma - delegate to handle the event of choosing loan term
-- (void) loanTermVCDidFinish:(YGLoanTermViewController *) loanTermVC {
+- (void) loanTermSelected:(YGLoanTermViewController *) loanTermVC {
     
     loanTerm = loanTermVC.loanTerm;
     NSLog(@"delegate to handle the event of loan term being selected %@", loanTerm);

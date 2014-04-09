@@ -20,6 +20,6 @@
 
 @protocol LoanTermDelegate <NSObject>
 
-- (void) loanTermVCDidFinish:(YGLoanTermViewController *) loanTermVC;
+- (void) loanTermSelected:(YGLoanTermViewController *) loanTermVC;
 
 @end
