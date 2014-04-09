@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Yang Ltd. All rights reserved.
 //
 
+//#define NSLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
 #import "LoanLaunchPad.h"
 
 @interface LoanLaunchPad ()
@@ -65,6 +67,7 @@
     
     loanTerm = loanTermVC.loanTerm;
     NSLog(@"delegate to handle the event of loan term being selected %@", loanTerm);
+    NSLog(@"%s (%d) The selected term is %@", __func__, __LINE__, loanTerm);
     
 }
 
