@@ -9,9 +9,11 @@
 //#define NSLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 #import "LoanLaunchPad.h"
+#import "YGLoanTerm.h"
 
 @interface LoanLaunchPad ()
 
+@property (weak, nonatomic) IBOutlet UIButton *selectLoanTermButton;
 @end
 
 @implementation LoanLaunchPad
@@ -29,7 +31,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    loanTerm = [NSNumber numberWithInt:0];
+    //loanTerm = [NSNumber numberWithInt:0];
+    loanTerm = 0;
     
     NSLog(@"LOAN PAD view loaded");
 }
@@ -53,10 +56,10 @@
     NSString * segueIdentifier = [segue identifier];
     if([segueIdentifier isEqualToString:@"SegueToLoanTerm"]){
         YGLoanTermViewController *loanTermVC = segue.destinationViewController;
-        NSLog(@"current loan term in launch pad %@", loanTerm);
+        NSLog(@"current loan term in launch pad %ld", (long)loanTerm);
         loanTermVC.loanTerm = loanTerm;
         //termController.loanTerm = [NSNumber numberWithInt:27];
-        NSLog(@"passing term to LoanTermVC: %i", [loanTermVC.loanTerm intValue]);
+        NSLog(@"passing term to LoanTermVC: %ld", (long)loanTermVC.loanTerm);
         
         loanTermVC.loanTermDelegate = self;
     }
@@ -66,9 +69,12 @@
 - (void) loanTermSelected:(YGLoanTermViewController *) loanTermVC {
     
     loanTerm = loanTermVC.loanTerm;
-    NSLog(@"delegate to handle the event of loan term being selected %@", loanTerm);
-    NSLog(@"%s (%d) The selected term is %@", __func__, __LINE__, loanTerm);
+    NSLog(@"delegate to handle the event of loan term being selected %ld", (long)loanTerm);
+    NSLog(@"%s (%d) The selected term is %ld", __func__, __LINE__, (long)loanTerm);
     
+    NSArray *tableData = [[YGLoanTerm sharedInstance] loanTerms];
+    NSString *loanTermDisplay = tableData[loanTerm];
+    [self.selectLoanTermButton setTitle:loanTermDisplay forState:UIControlStateNormal];
 }
 
 

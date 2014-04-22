@@ -11,7 +11,7 @@
 
 @interface LoanLaunchPad : UIViewController <LoanTermDelegate>
 {
-    NSNumber *loanTerm; // index
+    NSInteger loanTerm; // index
 }
 
 @end

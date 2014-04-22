@@ -64,7 +64,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix5-IE-5o6">
-                                <rect key="frame" x="161" y="141" width="53" height="30"/>
+                                <rect key="frame" x="161" y="141" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,6 +83,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="selectLoanTermButton" destination="Ix5-IE-5o6" id="5IP-y4-HaQ"/>
+                        <outlet property="view" destination="Ix5-IE-5o6" id="Nlg-1l-e2n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2p-Ru-K6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

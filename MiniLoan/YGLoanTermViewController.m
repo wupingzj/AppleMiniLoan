@@ -41,14 +41,31 @@
     tableData = [[YGLoanTerm sharedInstance] loanTerms];
     
     
-    NSIndexPath *idxPath = [NSIndexPath indexPathForRow:[self.loanTerm intValue] inSection:0];
+    NSIndexPath *idxPath = [NSIndexPath indexPathForRow:self.loanTerm inSection:0];
     
     [self.tableView selectRowAtIndexPath:idxPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
     
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:idxPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
-    NSLog(@"loan term view loaded. Term=%@ ", self.loanTerm);
+    NSLog(@"loan term view loaded. Term=%ld ", (long)self.loanTerm);
+    
+    //[self.navigationItem.backBarButtonItem setAction:@selector(doGoBack:)];
+    [self.navigationItem.leftBarButtonItem setAction:@selector(doGoBack2)];
+}
+
+-(void)doGoBack:(id)sender
+{
+    NSLog(@"Will go back....");
+    
+//    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)doGoBack2
+{
+    NSLog(@"Will go back 2....");
+    
+    //    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,14 +127,14 @@
     
 
     
-    NSIndexPath *currentIdxPath = [NSIndexPath indexPathForRow:[self.loanTerm intValue] inSection:section];
+    NSIndexPath *currentIdxPath = [NSIndexPath indexPathForRow:self.loanTerm inSection:section];
     cellToClear = [tv cellForRowAtIndexPath:currentIdxPath];
     cellToClear.accessoryType = UITableViewCellAccessoryNone;
     
     cellToSet   = [tv cellForRowAtIndexPath:indexPath];
     cellToSet.accessoryType = UITableViewCellAccessoryCheckmark;
     
-    self.loanTerm = [NSNumber numberWithInteger:row];
+    self.loanTerm = row;
     
     [self.loanTermDelegate loanTermSelected:self];
 }
@@ -169,5 +186,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
+
 
 @end
